@@ -54,6 +54,28 @@ function createSecondScene() {
     makeEllipse(0, 140, 150, 80, "Yellow", 1)
     makeEllipse(130, 140, 150, 80, "Yellow", 1)
     makeImage(" http://mamietitine.m.a.pic.centerblog.net/Sun_Pin.png", 170,  3, 30, 30, 1)
+    makeCircle(50, 20, 6, "white", 0.8)
+    makeCircle(56, 20, 6, "white", 0.8)
+    makeCircle(45, 25, 6, "white", 0.8)
+    makeCircle(51, 25, 6, "white", 0.8)
+    makeCircle(59, 25, 6, "white", 0.8)
+     makeCircle(50, 20, 6, "white", 0.8)
+    makeCircle(56, 20, 6, "white", 0.8)
+    makeCircle(45, 25, 6, "white", 0.8)
+    makeCircle(51, 25, 6, "white", 0.8)
+    makeCircle(59, 25, 6, "white", 0.8)
+     makeCircle(140, 20, 6, "white", 0.8)
+    makeCircle(146, 20, 6, "white", 0.8)
+    makeCircle(135, 25, 6, "white", 0.8)
+    makeCircle(141, 25, 6, "white", 0.8)
+    makeCircle(149, 25, 6, "white", 0.8)
+     makeCircle(140, 20, 6, "white", 0.8)
+    makeCircle(146, 20, 6, "white", 0.8)
+    makeCircle(135, 25, 6, "white", 0.8)
+    makeCircle(141, 25, 6, "white", 0.8)
+    makeCircle(149, 25, 6, "white", 0.8)
+    makeImage("http://4.bp.blogspot.com/-MwEk0gFg5Bo/Ubr42I4cIkI/AAAAAAAA74E/B5IkqcFNp9U/s1600/palmera.png", 0, 20, 80, 80, 1)
+    makeText("Summer", 70, 40, 20, "Amatic SC", "black", 0.8)
 }
 
 
@@ -61,7 +83,47 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    makeRect(0,0, 10000, 10000, "black", 1)
+    makeEllipse(0, 140, 150, 80, "white", 1)
+    makeEllipse(130, 140, 150, 80, "white", 1)
+    makeCircle(20, 30, 2, "white", 0.8)
+    makeCircle(30, 10, 2, "white", 0.8)
+    makeCircle(10, 37, 2, "white", 0.8)
+    makeCircle(120, 45, 2, "white", 0.8)
+    makeCircle(110, 17, 2, "white", 0.8)
+    makeCircle(60, 40, 2, "white", 0.8)
+    makeCircle(70, 25, 2, "white", 0.8)
+    makeCircle(77, 36, 2, "white", 0.8)
+    makeCircle(85, 6, 2, "white", 0.8)
+    makeCircle(27, 50, 2, "white", 0.8)
+    makeCircle(145, 37, 2, "white", 0.8)
+    makeCircle(130, 13, 2, "white", 0.8)
+    makeCircle(35, 37, 2, "white", 0.8)
+    makeCircle(38, 46, 2, "white", 0.8)
+    makeCircle(46, 15, 2, "white", 0.8)
+    makeCircle(46, 39, 2, "white", 0.8)
+    makeCircle(70, 35, 2, "white", 0.8)
+    makeCircle(76, 17, 2, "white", 0.8)
+    makeCircle(68, 55, 2, "white", 0.8)
+    makeCircle(85, 36, 2, "white", 0.8)
+    makeCircle(74, 30, 2, "white", 0.8)
+    makeCircle(79, 55, 2, "white", 0.8)
+    makeCircle(160, 30, 2, "white", 0.8)
+    makeCircle(175, 18, 2, "white", 0.8)
+    makeCircle(170, 30, 2, "white", 0.8)
+    makeCircle(164, 13, 2, "white", 0.8)
+    makeCircle(155, 25, 2, "white", 0.8)
+    makeCircle(100, 30, 2, "white", 0.8)
+    makeCircle(120, 37, 2, "white", 0.8)
+    makeCircle(127, 24, 2, "white", 0.8)
+    makeCircle(187, 30, 2, "white", 0.8)
+    makeCircle(177, 50, 2, "white", 0.8)
+    makeCircle(195, 35, 2, "white", 0.8)
+    makeCircle(190, 55, 2, "white", 0.8)
+    makeCircle(183, 27, 2, "white", 0.8)
+    makeCircle(195, 0, 15, "gray", 1)
+    makeImage("http://3.bp.blogspot.com/-tUr1QlImB9Y/VIsGCSdXZ8I/AAAAAAAB8NM/AgcI-SBC-XE/s1600/Mu%C3%B1ecos%2BNieve%2B10.png", 10, 40, 50, 50, 1)
+    makeText("Winter", 100, 80, 20, "Permanent Marker", "Black", 0.7)
 }
 function createFourthScene(){
 }
@@ -77,7 +139,7 @@ function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
     var myNumber = Math.random()
     // If the number is less than 0.33, call the function to create your first scene.
-    if(myNumber < 0.1){
+    if(myNumber < 0.33){
        createFirstScene() 
     }
     
@@ -89,9 +151,10 @@ function createRandomScene() {
     
     
     // Else, call the function to create your third scene.
-    
-    
-    
+    else if(myNumber < 98){
+        createThirdScene()
+    }else
+    createFourthScene()
 }
 
 
