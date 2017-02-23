@@ -41,7 +41,10 @@ function createFirstScene() {
      makeRect(188, 75, 3, 25, "lightgreen", 1)
      makeCircle(189, 80, 7, "white", 1)
      makeCircle(189, 80, 3, "yellow", 1)
-     makeText("Spring", 75, 68, 20, "Caveat Brush", "black", 0.8)
+     var myNumber = Math.random()
+     if(myNumber < 0.56){ 
+    makeText("Spring", 75, 68, 20, "Caveat Brush", "black", 0.8)
+}
 }
 
 
@@ -74,8 +77,11 @@ function createSecondScene() {
     makeCircle(135, 25, 6, "white", 0.8)
     makeCircle(141, 25, 6, "white", 0.8)
     makeCircle(149, 25, 6, "white", 0.8)
-    makeImage("http://4.bp.blogspot.com/-MwEk0gFg5Bo/Ubr42I4cIkI/AAAAAAAA74E/B5IkqcFNp9U/s1600/palmera.png", 0, 20, 80, 80, 1)
-    makeText("Summer", 70, 40, 20, "Amatic SC", "black", 0.8)
+    var myNumber = Math.random()
+    if (myNumber < 0.45){
+        makeImage("http://4.bp.blogspot.com/-MwEk0gFg5Bo/Ubr42I4cIkI/AAAAAAAA74E/B5IkqcFNp9U/s1600/palmera.png", 0, 20, 80, 80, 1)
+    makeText("Summer", 70, 40, 20, "Amatic SC", "black", 0.8) 
+}
 }
 
 
@@ -122,11 +128,13 @@ function createThirdScene() {
     makeCircle(190, 55, 2, "white", 0.8)
     makeCircle(183, 27, 2, "white", 0.8)
     makeCircle(195, 0, 15, "gray", 1)
-    makeImage("http://3.bp.blogspot.com/-tUr1QlImB9Y/VIsGCSdXZ8I/AAAAAAAB8NM/AgcI-SBC-XE/s1600/Mu%C3%B1ecos%2BNieve%2B10.png", 10, 40, 50, 50, 1)
+    var myNumber = Math.random()
+     if(myNumber < 0.70){ 
+     makeImage("http://3.bp.blogspot.com/-tUr1QlImB9Y/VIsGCSdXZ8I/AAAAAAAB8NM/AgcI-SBC-XE/s1600/Mu%C3%B1ecos%2BNieve%2B10.png", 10, 40, 50, 50, 1)
     makeText("Winter", 100, 80, 20, "Permanent Marker", "Black", 0.7)
 }
-function createFourthScene(){
 }
+
 
 
 
@@ -151,12 +159,10 @@ function createRandomScene() {
     
     
     // Else, call the function to create your third scene.
-    else if(myNumber < 98){
+    else{
         createThirdScene()
-    }else
-    createFourthScene()
+    }
 }
-
 
 
 // DO NOT EDIT ANYTHING BELOW THIS LINE!
